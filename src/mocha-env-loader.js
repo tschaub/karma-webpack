@@ -11,7 +11,7 @@ module.exports = function(content, map) {
   var id = this.options.name
 
   if (!id) {
-    this.callback(null, content, map)
+    return this.callback(null, content, map)
   }
 
   if (map) {
